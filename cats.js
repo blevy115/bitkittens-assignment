@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }).done(function(data){
       var i = 0
       data.cats.forEach(function(cat){
+        catBoxes[i].innerHTML = ""
         var imgTag = document.createElement('img');
         imgTag.src = cat.photo;
         imgTag.alt = "Photo of "+ cat.name;
